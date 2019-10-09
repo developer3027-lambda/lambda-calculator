@@ -1,15 +1,36 @@
+* {
+    border: 1px solid black;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(150, 150, 150);
+}
+
 .container {
     background-color: #c00025;
     width: 100%;
-    max-width: 550px;
+    min-width: 350px;
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
 }
+
+.logo-container {
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
 .display {
-    margin-top: 25px;
     height: 100px;
-    width: 450px;
+    width: 100%;
+    max-width: 300px;
     border-radius: 50px;
     color: white;
     background-color: #322c2d;
@@ -18,5 +39,83 @@
     justify-content: flex-end;
     align-items: flex-end;
     padding-right: 8%;
-    font-size: 5.0rem;
-  }
+    font-size: 8rem;
+    margin: 3% auto 6% auto;
+}
+
+.button {
+    font-size: 3rem;
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: #184379;
+    border: none;
+    border-bottom: 4px solid black;
+    border-radius: 50px;
+    margin: 2%;
+}
+
+.button-container {
+    display: flex;
+
+}
+
+.num-box {
+    display: flex;
+    flex: wrap;
+    width: 350px;
+}
+
+.number-container {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: center;
+    margin-left: 2%;
+}
+
+.number-container button {
+    font-size: 3rem;
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: #184379;
+    border: none;
+    border-bottom: 4px solid black;
+    border-radius: 50px;
+    margin: 2%;
+}
+
+button.special-button {
+    background-color: #225d9e;
+}
+
+.number-button:nth-child(13) {
+    width: 215px;
+    border-radius: 35px;
+}
+
+.operator {
+    width: 30%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.operator-container button {
+    font-size: 3rem;
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: #237293;
+    border: none;
+    border-bottom: 4px solid black;
+    border-radius: 50px;
+    margin: 4.5%;
+}
+
+button:active {
+    border-bottom: 4px solid #c00025;
+}

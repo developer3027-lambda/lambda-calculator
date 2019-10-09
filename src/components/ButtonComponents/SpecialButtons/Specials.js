@@ -7,7 +7,7 @@ const Specials = () => {
   const [spec, setSpec] = useState(specials);
 
   return (
-    <div>
+    <div className=''>
     {spec.map((item, index) => (
       <SpecialButton key={index} number={item} />
     ))}
